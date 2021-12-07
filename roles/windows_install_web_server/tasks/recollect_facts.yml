@@ -1,0 +1,6 @@
+---
+- name: gather facts
+  setup:
+   gather_subset: ‘!all’
+   async: 60
+   poll: 5

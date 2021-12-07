@@ -1,5 +1,7 @@
 ---
 # tasks file for windows-install-webserver
+ - name: Gather Facts 
+   import_tasks: recollect_facts.yml 
  - name: Install IIS
    import_tasks: install_iis.yml
  - name: Create website index.html 
