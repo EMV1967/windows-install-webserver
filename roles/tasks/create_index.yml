@@ -1,0 +1,8 @@
+---
+- name: Create website index.html
+  win_copy:
+    dest: C:\Inetpub\wwwroot\index.html
+    content: "{{wiw_iis_message}}"
+  notify: 
+   - Start iis server  
+    
