@@ -1,12 +1,8 @@
 ---
 # tasks file for windows-install-webserver
-- name: Install and configure IIS Web Server 
-  hosts: wlab 
-  gather_facts: true 
-  tasks:
-   - name: Install IIS
-     import_tasks: install_iis.yml
-   - name: Create website index.html 
-     import_tasks: create_index.yml
+ - name: Install IIS
+   import_tasks: install_iis.yml
+ - name: Create website index.html 
+   import_tasks: create_index.yml
 
  
