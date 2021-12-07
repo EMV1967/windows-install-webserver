@@ -1,0 +1,7 @@
+---
+- name: Install and configure Windows IIS 
+  hosts: wlab 
+  gather_facts: true 
+  tasks:
+   - include_role:
+       name: windows_install_web_server
