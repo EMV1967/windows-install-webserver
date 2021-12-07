@@ -1,7 +1,7 @@
 ---
 - name: Install and configure Windows IIS 
   hosts: wlab 
-  gather_facts: flase  
+  gather_facts: false  
   tasks:
    - include_role:
        name: windows_install_web_server
