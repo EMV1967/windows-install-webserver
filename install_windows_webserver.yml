@@ -5,6 +5,9 @@
   tasks:
    - include_role:
        name: windows_install_web_server
+   - name: Display http output 
+     debug:
+      msg: "{{http_output}}"       
    - name: Display facts 
      debug:
-      msg: "{{ansible_facts}}"    
+      msg: "{{ansible_facts}}" 
