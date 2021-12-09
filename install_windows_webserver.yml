@@ -1,5 +1,5 @@
 ---
-- name: Install and configure Windows IIS 
+- name: Install and configure Windows IIS and management tools
   hosts: wlab 
   gather_facts: false  
   tasks:
