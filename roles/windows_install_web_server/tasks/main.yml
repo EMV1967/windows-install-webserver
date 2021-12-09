@@ -6,5 +6,7 @@
    import_tasks: install_iis.yml
  - name: Create website index.html 
    import_tasks: create_index.yml
+ - name: Check URL http://localhost 
+   import_tasks: test_url.yml
 
  

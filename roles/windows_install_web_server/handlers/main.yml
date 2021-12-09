@@ -3,6 +3,5 @@
 - name: Start iis server 
   win_service: 
    name: W3Svc
-   state: started 
+   state: restarted
    
-  
