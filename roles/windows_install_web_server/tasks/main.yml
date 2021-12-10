@@ -1,12 +1,15 @@
 ---
 # tasks file for windows-install-webserver
- - name: Gather Facts 
-   import_tasks: recollect_facts.yml 
- - name: Install IIS
-   import_tasks: install_iis.yml
- - name: Create website index.html 
-   import_tasks: create_index.yml
- - name: Check URL http://localhost 
-   import_tasks: test_url.yml
+ - name: Gather facts 
+   import_tasks: recollect_facts.yml
+ - name: Install, configure IIS and check website 
+   block:   
+    - name: Install IIS
+      import_tasks: install_iis.yml
+    - name: Create website index.html 
+      import_tasks: create_index.yml
+    - name: Check URL http://localhost 
+      import_tasks: test_url.yml
+   when: ansible_facts['distribution_version'] >= '10' 
 
  

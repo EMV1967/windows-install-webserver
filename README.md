@@ -6,7 +6,7 @@ Install Windows Web Server and management tools
 Requirements
 ------------
 
-Windows Server 2016 - Windows Server 2019
+Windows Server 2016 - Windows Server 2019 or above
 
 Role Variables
 --------------
