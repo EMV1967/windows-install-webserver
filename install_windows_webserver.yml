@@ -1,7 +1,7 @@
 ---
 - name: Install and configure Windows IIS and management tools
   hosts: 'all'
-  tags: iis
+  tags: iiswebserver
   gather_facts: false  
   tasks:
    - include_role:
