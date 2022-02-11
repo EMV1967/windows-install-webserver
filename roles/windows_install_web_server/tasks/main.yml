@@ -11,5 +11,4 @@
     - name: Check URL http://localhost 
       import_tasks: test_url.yml
    when: ansible_facts['distribution_version'] >= '10' 
-
- 
+   

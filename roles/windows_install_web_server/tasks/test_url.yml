@@ -3,6 +3,5 @@
   win_uri:
     url: http://localhost
   register: http_output 
-  name: checkurl 
- 
+  name: iischeckurl 
  
