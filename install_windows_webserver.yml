@@ -1,6 +1,7 @@
 ---
 - name: Install and configure Windows IIS and management tools
-  hosts: wlab 
+  hosts: 'all'
+  tags: iis
   gather_facts: false  
   tasks:
    - include_role:
