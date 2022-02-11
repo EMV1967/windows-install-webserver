@@ -4,5 +4,6 @@
     dest: C:\Inetpub\wwwroot\index.html
     content: "{{wiw_iis_message}}"
   notify: 
-   - Start iis server  
+   - Start iis server 
+  tags: iisindex  
     
