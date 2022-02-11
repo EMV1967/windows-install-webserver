@@ -11,4 +11,5 @@
       msg: "{{http_output}}"       
    - name: Display facts 
      debug:
-      msg: "{{ansible_facts}}" 
+      msg: "{{ansible_facts}}"
+      
