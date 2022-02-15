@@ -1,6 +1,6 @@
 ---
 # tasks file for windows-install-webserver
- - name: Gather facts 
+ - name: [GATHER_FACTS] Gather facts 
    import_tasks: recollect_facts.yml
  - name: Install, configure IIS and check website 
    block:   

@@ -1,5 +1,5 @@
 ---
-- name: Gather facts
+- name: [GATHER_FACTS] Gather facts
   setup:
    gather_subset: '!all'
    async: 60

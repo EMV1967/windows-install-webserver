@@ -1,3 +1,5 @@
 ---
 # vars file for windows-install-webserver
+wiw_index_dest: 'C:\Inetpub\wwwroot\index.html'
+wiw_iis_message : "My first Webserver (IIS) installation"
 
