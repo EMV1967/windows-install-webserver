@@ -2,7 +2,7 @@
 # tasks file for windows-install-webserver
  - name: [GATHER_FACTS] Gather facts 
    import_tasks: recollect_facts.yml
- - name: Install, configure IIS and check website 
+ - name: [INSTALL_CONFIGURE_IIS] Install, configure IIS and check website 
    block:   
     - name: Install IIS
       import_tasks: install_iis.yml
