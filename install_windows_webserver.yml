@@ -1,15 +1,15 @@
 ---
-- name: Install and configure Windows IIS and management tools
+- name: '[MAIN_INSTALL_IIS] Install and configure Windows IIS and management tools'
   hosts: 'all'
   tags: iiswebserver
   gather_facts: false  
   tasks:
    - include_role:
        name: windows_install_web_server
-   - name: Display http output 
+   - name: 'Display http output' 
      debug:
       msg: "{{http_output}}"       
-   - name: Display facts 
+   - name: 'Display facts' 
      debug:
       msg: "{{ansible_facts}}"
       
