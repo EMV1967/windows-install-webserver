@@ -1,5 +1,5 @@
 ---
-- name: Install and configure Windows IIS and management tools
+- name: [MAIN_INSTALL_IIS] Install and configure Windows IIS and management tools
   hosts: 'all'
   tags: iiswebserver
   gather_facts: false  
