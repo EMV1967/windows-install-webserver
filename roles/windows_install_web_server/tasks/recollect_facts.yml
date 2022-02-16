@@ -1,5 +1,5 @@
 ---
-- name: '[GATHER_FACTS] Gather facts'
+- name: '[WINDOWS_INSTALL_WEB_SERVER][RECOLLECT_FACTS] Gather facts'
   setup:
    gather_subset: '!all'
    async: 60

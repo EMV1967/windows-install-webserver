@@ -1,6 +1,6 @@
 ---
 block:
-- name: '[INSTALL_IIS_MGMTTOOLS] Install IIS (Web-Server) and management tools' 
+- name: '[WINDOWS_INSTALL_WEB_SERVER][INSTAL_IIS] Install IIS (Web-Server) and management tools' 
   win_feature:
     name: Web-Server
     state: present
