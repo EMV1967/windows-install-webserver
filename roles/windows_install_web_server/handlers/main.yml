@@ -1,7 +1,0 @@
----
-# handlers file for windows-install-webserver
-- name: Start iis server 
-  win_service: 
-   name: W3Svc
-   state: restarted
-   
