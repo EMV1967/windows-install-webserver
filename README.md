@@ -18,9 +18,9 @@ Extra Vars
 --------------
 **wiw_iis_action:**
 
-**present** (install IIS)
+>**present** (install IIS)
 
-**absent**  (uninstall IIS)
+>**absent**  (uninstall IIS)
 
 Dependencies
 ------------
