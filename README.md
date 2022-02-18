@@ -12,7 +12,12 @@ Role Variables
 --------------
 
 wiw_iis_message: Message to display in index.html
+wiw_index_dest: Path to index.html
 
+Extra Vars
+--------------
+wiw_iis_action: present (install IIS)
+                absent  (uninstall IIS)
 Dependencies
 ------------
 
@@ -33,4 +38,4 @@ BSD
 Author Information
 ------------------
 
-Enrique Moreno Velasco - (Enrique.Moreno.Velasco@kyndryl.com)
+Enrique Moreno Velasco - (Enrique.Moreno.Velasco@itnow.es)
