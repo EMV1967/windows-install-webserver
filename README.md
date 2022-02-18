@@ -10,14 +10,14 @@ Windows Server 2016 - Windows Server 2019 or above
 
 Role Variables
 --------------
-<p>**wiw_iis_message:** Message to display in index.html</p>
-<p>**wiw_index_dest:** Path to index.html</p>
+**wiw_iis_message:** Message to display in index.html
+**wiw_index_dest:** Path to index.html
 
 Extra Vars
 --------------
-<p>**wiw_iis_action:**</p>
-<p>**present** (install IIS)</p>
-<p>**absent**  (uninstall IIS)</p>
+**wiw_iis_action:**
+**present** (install IIS)
+**absent**  (uninstall IIS)
 
 Dependencies
 ------------
