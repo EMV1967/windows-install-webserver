@@ -15,8 +15,10 @@ wiw_index_dest: Path to index.html
 
 Extra Vars
 --------------
-wiw_iis_action: present (install IIS)
-                absent  (uninstall IIS)
+wiw_iis_action: 
+present (install IIS)
+absent  (uninstall IIS)
+
 Dependencies
 ------------
 
