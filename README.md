@@ -10,7 +10,6 @@ Windows Server 2016 - Windows Server 2019 or above
 
 Role Variables
 --------------
-
 wiw_iis_message: Message to display in index.html
 wiw_index_dest: Path to index.html
 
