@@ -1,0 +1,13 @@
+---
+block:
+- name: '[WINDOWS_INSTALL_WEB_SERVER][INSTAL_IIS] Install IIS (Web-Server) and management tools' 
+  win_feature:
+    name: Web-Server
+    state: "{{wiw_iis_action}}"
+    include_management_tools: yes 
+  register: win_feature_output 
+- name: 'Reboot if installing Web-Server feature requires it'
+  win_reboot:
+  when: win_feature_output.reboot_required
+tags: iisfeatureinstall 
+ 

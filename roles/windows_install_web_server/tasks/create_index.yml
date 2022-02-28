@@ -1,0 +1,8 @@
+---
+- name: '[WINDOWS_INSTALL_WEB_SERVER][CREATE_INDEX] Create website index.html file'
+  win_copy:
+    dest: "{{wiw_index_dest}}" 
+    content: "{{wiw_iis_message}}"
+  notify: 
+   - Start iis server 
+  tags: iisindex

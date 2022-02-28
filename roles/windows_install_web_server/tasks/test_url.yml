@@ -1,0 +1,7 @@
+---
+- name: '[WINDOWS_INSTALL_WEB_SERVER][TEST_URL] Check that you can connect (GET) to a page and it returns a status 200'
+  win_uri:
+    url: http://localhost
+  register: http_output 
+  name: iischeckurl 
+ 
